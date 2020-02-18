@@ -4,8 +4,27 @@ body {
     padding: 0;
     border: 0;
 }
-.shadow {
-    filter: drop-shadow(3px 3px 6px #aaa);
+@media (prefers-color-scheme: dark) {
+    .adaptivebg {
+        background: #333;
+    }
+    .shadow {
+        filter: drop-shadow(3px 3px 3px #666);
+    }
+    .shadowinvert {
+        filter: invert(100%) brightness(90%) drop-shadow(3px 3px 3px #666);
+    }
+}
+@media (prefers-color-scheme: light) {
+    .adaptivebg {
+        background: #fefefe;
+    }
+    .shadow {
+        filter: drop-shadow(3px 3px 3px #aaa);
+    }
+    .shadowinvert {
+        filter: drop-shadow(3px 3px 3px #aaa);
+    }
 }
 .column {
     float: left;
