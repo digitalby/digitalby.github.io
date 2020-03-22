@@ -4,34 +4,30 @@ body {
     padding: 0;
     border: 0;
 }
-.column-left {
-    float: left;
-}
-.column-right {
-    float: right;
-}
-.column {
-    padding: 5px;
-}
-.flex-center {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+#header-flex {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     overflow: visible;
 }
-#main-container {
-    height:100vh;
+#header-logo {
+    min-width:300px;
+    min-height:50px;
 }
-#digitalby-logo {
-    min-width:60px;
-    min-height: 50px;
+#header-border {
+    width: 100%;
+    height: 12px;
+    -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
 }
-#digitalby-lettering {
-    min-width:240px;
-    min-height:40px;
+.spacer {
+    content: " ";
+    width: 100%;
+    height: 64px;
+}
+.header-bg {
+    background-color: #f4f4f4;
 }
 .unselectable {
     user-select: none;
@@ -46,8 +42,11 @@ body {
     .shadow {
         filter: drop-shadow(3px 3px 3px #666);
     }
-    .shadowinvert {
-        filter: invert(100%) brightness(90%) drop-shadow(3px 3px 3px #666);
+    .dark-invert {
+        filter: invert(100%);
+    }
+    .header-bg {
+        background-color: #202020;
     }
 }
 @media (prefers-color-scheme: light) {
@@ -57,15 +56,9 @@ body {
     .shadow {
         filter: drop-shadow(3px 3px 3px #aaa);
     }
-    .shadowinvert {
-        filter: drop-shadow(3px 3px 3px #aaa);
-    }
 }
 @media only screen and (min-device-width: 200px) and (max-device-width: 700px) and (orientation:portrait) {
-    #digitalby-lettering {
-        width: 70vw;
-    }
-    #digitalby-logo {
-        width: 20vw;
+    #header-logo {
+        width: 90vw;
     }
 }

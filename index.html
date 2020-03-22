@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>DIGITALBY</title>
-<link href="style.css?v=17" rel="stylesheet" type="text/css">
+<link href="style.css?v=40" rel="stylesheet" type="text/css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161012400-1"></script> 
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -30,9 +30,15 @@
 <meta name="theme-color" content="#ffac13">
 </head>
 <body class="adaptive-bg">
-<div id="main-container" class="flex-center"> <a class="flex-center" href="/">
-  <div class="column"> <img src="artwork.svg" alt="" id="digitalby-logo" class="shadow unselectable column-right"/> </div>
-  <div class="column"> <img src="digitalby.svg" alt="DIGITALBY" id="digitalby-lettering" class="shadowinvert unselectable column-left"/> </div>
-  </a> </div>
+<div id="header-flex" class="header-bg flex-center"> <a class="flex-center" href="/">
+  <div>
+    <picture>
+      <source srcset="logo_dark.svg" media="(prefers-color-scheme: dark)">
+      <img src="logo.svg" alt="" id="header-logo" class="shadow unselectable"/> </picture>
+  </div>
+  </a>
+</div>
+<div id="header-border" class="header-bg"/>
+<div class="spacer"/>
 </body>
 </html>
