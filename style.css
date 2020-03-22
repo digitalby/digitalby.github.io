@@ -37,11 +37,6 @@ body {
     overflow: visible;
     height:100vh;
 }
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-} 
 .unselectable {
     user-select: none;
     -moz-user-select: none;
