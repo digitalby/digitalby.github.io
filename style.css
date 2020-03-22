@@ -30,11 +30,16 @@ body {
     float: left;
     padding: 5px;
 }
-.row {
+.flex-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: visible;
+}
+.main-row {
     height:100vh;
 }
 .unselectable {
