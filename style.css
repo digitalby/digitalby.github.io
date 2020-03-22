@@ -61,7 +61,7 @@ body {
         filter: drop-shadow(3px 3px 3px #aaa);
     }
 }
-@media only screen and (min-device-width: 200px) and (max-device-width: 700px) {
+@media only screen and (min-device-width: 200px) and (max-device-width: 700px) and (orientation:portrait) {
     #digitalby-lettering {
         width: 70vw;
     }
