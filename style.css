@@ -57,7 +57,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   overflow: visible;
 }
 #header-logo {
@@ -73,7 +73,7 @@ li {
 #links-container {
   display: flex;
   flex-direction: row;
-    flex-grow: 1;
+  flex-grow: 1;
   min-height: 96px;
   width: 100%;
   justify-content: center;
@@ -133,8 +133,8 @@ li {
 }
 .psxcovers-bg {
   background-color: #c5d5bd;
-  -webkit-clip-path: polygon(96% 5%, 7% 7%, 1% 94%, 91% 91%);
-  clip-path: polygon(96% 5%, 7% 7%, 1% 94%, 91% 91%);
+  -webkit-clip-path: polygon(96% 5%, 4% 4%, 1% 94%, 91% 91%);
+  clip-path: polygon(96% 5%, 4% 4%, 1% 94%, 91% 91%);
 }
 .ee-bg p {
   color: #303030
@@ -157,22 +157,22 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
   flex-grow: 1;
-  height: 100%;
-  max-width: 1280px;
+  width: 100%;
+  max-width: 1700px;
   align-self: center;
   justify-content: space-around;
-  align-items: center;
 }
 .content-section {
   min-height: 220px;
-  flex-basis: 320px;
+  max-height: 320px;
+  flex-basis: 360px;
   padding: 32px;
   margin: 16px 16px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: space-around;
+  justify-content: space-around;
+  align-content: flex-start;
 }
 #footer-flex {
   display: flex;
@@ -182,7 +182,7 @@ li {
   justify-content: flex-start;
   align-items: flex-end;
   max-width: 100%;
-  max-width: 568px;
+  max-width: 1024px;
   min-height: 320px;
   text-align: center;
   align-self: center;
@@ -190,7 +190,7 @@ li {
 #footer-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 16px 5% 16px 16px;
@@ -258,10 +258,5 @@ li {
   }
   .shadow {
     filter: drop-shadow(3px 3px 3px #aaa);
-  }
-}
-@media only screen and (min-device-width: 200px) and (max-device-width: 700px) and (orientation:portrait) {
-  #header-logo {
-    width: 85vw;
   }
 }
