@@ -115,6 +115,9 @@ li {
 }
 .megaremind-bg {
   background-color: #5b7b7b;
+  margin-left: auto;
+  -webkit-clip-path: polygon(95% 5%, 1% 4%, 0% 97%, 97% 93%);
+  clip-path: polygon(95% 5%, 1% 4%, 0% 97%, 97% 93%);
 }
 .psxcovers-bg p {
   color: #303030
@@ -124,6 +127,8 @@ li {
 }
 .psxcovers-bg {
   background-color: #c5d5bd;
+  -webkit-clip-path: polygon(96% 5%, 7% 7%, 1% 94%, 91% 91%);
+  clip-path: polygon(96% 5%, 7% 7%, 1% 94%, 91% 91%);
 }
 .ee-bg p {
   color: #303030
@@ -136,10 +141,27 @@ li {
 }
 .ee-bg {
   background-color: #bdb1cf;
+  -webkit-clip-path: polygon(91% 7%, 3% 7%, 3% 100%, 91% 91%);
+  clip-path: polygon(91% 7%, 3% 7%, 3% 100%, 91% 91%);
+  margin-right: auto;
+}
+#content-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 .content-section {
-  padding: 16px;
+  min-height: 220px;
+  flex-basis: 320px;
+  padding: 32px;
   margin: 16px 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-around;
 }
 #footer-flex {
   display: flex;
