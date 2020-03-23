@@ -4,6 +4,16 @@ body {
   padding: 0;
   border: 0;
 }
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+  color: #303030;
+  font-size: 24pt;
+  font-weight: bolder;
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
 a {
   color: #303030;
   font-size: 14pt;
@@ -13,6 +23,17 @@ p {
   color: #303030;
   font-size: 14pt;
   font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+.inline-link {
+  color: rgba(9, 152, 226, 1.00);
+}
+.github-link {
+  font-weight: bolder;
+  color: rgba(91, 41, 122, 1.00);
 }
 #header-flex {
   display: flex;
@@ -56,18 +77,36 @@ p {
   max-width: 32px;
   padding-right: 4px;
 }
-#footer-border-top {
-  max-width: 240px;
-  height: 9px;
-  -webkit-clip-path: polygon(0 100%, 0 0, 100% 100%);
-  clip-path: polygon(0 100%, 0 0, 100% 100%);
+.megaremind-bg p {
+  color: #EAEAEA
 }
-#footer-border-right {
-  width: 25%;
-  height: 100px;
-  -webkit-clip-path: polygon(0 100%, 0 0, 100% 100%);
-  clip-path: polygon(0 100%, 0 0, 100% 100%);
-  flex-grow: 1;
+.megaremind-bg h2 {
+  color: #EAEAEA
+}
+.megaremind-bg {
+  background-color: #5b7b7b;
+}
+.psxcovers-bg p {
+  color: #303030
+}
+.psxcovers-bg h2 {
+  color: #303030
+}
+.psxcovers-bg {
+  background-color: #c5d5bd;
+}
+.ee-bg p {
+  color: #303030
+}
+.ee-bg h2 {
+  color: #303030
+}
+.ee-bg {
+  background-color: #bdb1cf;
+}
+.content-section {
+  padding: 16px;
+  margin: 32px 16px;
 }
 #footer-flex {
   display: flex;
@@ -76,18 +115,20 @@ p {
   justify-content: flex-start;
   align-items: flex-end;
   max-width: 100%;
-  max-width: 480px;
+  max-width: 568px;
   text-align: center;
 }
 #footer-container {
-  flex-grow: 5;
   display: inline-flex;
+  flex-grow: 5;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  min-width: 240px;
-  min-height: 100px;
+  padding: 16px 5% 16px 16px;
+  -webkit-clip-path: polygon(0 100%, 0 0, 95% 8px, 100% 100%);
+  clip-path: polygon(0 100%, 0 0, 95% 8px, 100% 100%);
+  min-width: 200px;
 }
 .spacer {
   width: 100%;
@@ -114,6 +155,12 @@ p {
 }
 @media (prefers-color-scheme: dark) {
   p {
+    color: #EAEAEA;
+  }
+  a {
+    color: #EAEAEA;
+  }
+  h2 {
     color: #EAEAEA;
   }
   .adaptive-bg {
