@@ -4,6 +4,11 @@ body {
   padding: 0;
   border: 0;
 }
+a {
+  color: #303030;
+  font-size: 14pt;
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
 p {
   color: #303030;
   font-size: 14pt;
@@ -25,6 +30,31 @@ p {
   height: 12px;
   -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
   clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+#links-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+#email-link {
+  padding: 16px 16px 16px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  color: white;
+  font-style: normal;
+  background-color: #E3454B;
+  width: 112px;
+  height: 24px;
+  -webkit-clip-path: polygon(95% 6%, 3% 0, 0% 97%, 94% 93%);
+  clip-path: polygon(95% 6%, 3% 0, 0% 97%, 94% 93%);
+}
+.link-icon {
+  max-width: 32px;
+  padding-right: 4px;
 }
 #footer-border-top {
   max-width: 240px;
@@ -60,9 +90,12 @@ p {
   min-height: 100px;
 }
 .spacer {
-  content: " ";
   width: 100%;
   min-height: 64px;
+}
+.mini-spacer {
+  width: 100%;
+  min-height: 24px;
 }
 .header-bg {
   background-color: #f4f4f4;
@@ -107,7 +140,6 @@ p {
     filter: drop-shadow(3px 3px 3px #aaa);
   }
 }
-/*@media (max-width:700px) {*/
 @media only screen and (min-device-width: 200px) and (max-device-width: 700px) and (orientation:portrait) {
   #header-logo {
     width: 85vw;
