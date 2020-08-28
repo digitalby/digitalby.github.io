@@ -1,9 +1,0 @@
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
-	 <defs>
-	         <clipPath id="squircle" clipPathUnits="objectBoundingBox">
-<path d="M100,200c43.8,0,68.2,0,84.1-15.9S200,143.8,200,100s0-68.2-15.9-84.1S143.8,0,100,0S31.8,0,15.9,15.9S0,56.2,0,100
-	s0,68.2,15.9,84.1S56.2,200,100,200z"/>
-	</clipPath>
-	</defs>
-</svg>
